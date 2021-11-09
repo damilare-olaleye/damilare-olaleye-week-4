@@ -1,0 +1,29 @@
+  /* The styling here applies to all h2 elements */
+
+  h2{
+    color: red;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(125, 50, 200);
+    background-color: black;
+}
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+p {
+    color: tomato;
+}
+
+p {
+    color: mediumspringgreen;
+}
+
+#website-introduction {
+    color: cyan;
+}

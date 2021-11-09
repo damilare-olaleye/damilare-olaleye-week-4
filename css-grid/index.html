@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        .grid-container {
+            font-size: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 50px 50px 400px 200px 50px;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        .item-1 {
+            background-color: red;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .item-2 {
+            background-color: yellow;
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        .item-3 {
+            background-color: green;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .item-4 {
+            background-color: blue;
+            grid-column: 2/3;
+            grid-row: 3/5;
+        }
+
+        .item-5 {
+            /* grid-colum and grid-row allow you to specify where you want individual grid items to be */
+            background-color: purple;
+            /* grid-column: 1/4;
+            grid-row: 3/4; */
+        }
+
+        .item-6 {
+            background-color: gold;
+            grid-column: 1/3;
+        }
+
+        #table-heading {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #student-table table {
+            font-size: 20pt;
+            color: white;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+
+        /* Descendant selector */
+        /* "Select the table tag that is a descendant " */
+    </style>
+</head>
+<body class="grid-container">
+    <!-- Semantic Elements:
+        An element that clearly describes its  meaning to the browswer and developer
+            - In the case of informing the browser, helps with accessibility for people with visual disabilites
+            - For the developer, helps you understand what a particular part of the page is for 
+
+            Examples:
+                1. <article></article>
+                2. <aside></aside>
+                3. <footer></footer>
+                4. <header></header>
+                5. <nav></nav>
+                6. <section></section>
+    -->
+
+    <header class="item-1">Header</header>
+    <nav class="item-2">Nav</nav>
+    <section id="student-table" class="item-3">
+        <h1 class="table-heading">Students Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student id</th>
+                    <th>Student first name</th>
+                    <th>Student last name</th>
+                    <th>Classification</th>
+                    <th>Student age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>Freshman</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                    <td>Senior</td>
+                    <td>22</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <aside class="item-4">Aside</aside>
+    <article class="item-5">Article</article>
+    <footer class="item-6">Footer</footer>
+</body>
+
+</html>

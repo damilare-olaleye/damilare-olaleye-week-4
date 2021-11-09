@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <!--
+        px (100px, 20px, ...): pixels
+        em (2em, 1.5em, 1em): based on font-size of the element. So if your element has a font-size of 5px, 
+        2em = 10px
+        1em = 5pm
+        rem (2rem, 4rem, 3.5rem): based on font-size of the parent element. So, if the parent element has a font-size of 20px,
+        2rem = 40px
+        4rem = 80px
+        3.5rem = 70px
+    -->
+    <style>
+
+        .box {
+            border-style: solid;
+            font-size: 10px;
+            border-width: 0.25em;
+            border-color: black;
+            text-align: center;
+
+        }
+
+        .green-box {
+            padding: 100px;
+            background-color: green;
+            position: relative;
+        }
+
+        .silver-box {
+            background-color: silver;
+            margin-bottom: 10px;
+            padding: 10px;
+
+            /* position: relative allows us to move an element relative to its "natural" position on a page*/
+            position: relative;
+            left: 100px; /* moves it 100px over from the left*/
+            top: 100px; /* 100px down from the top */
+            /*bottm, right are the 2 other ones */
+            z-index: 100; /* If we have overlapping elements, z-index allows for the element with higher values to go on top */
+        }
+
+        .gold-box {
+            background-color: gold;  
+            margin-top: 10px;
+            /* We can specify top, right, bottom, left padding individually (clock-wise motion) */
+            padding: 100px 10px 100px 10px;
+            font-family:'Courier New', Courier, monospace;
+
+            /* Absolute: relative to the position of the parent element.The parent element should be set to a position of "relative" */
+            position: absolute;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box green-box">
+        <div class="box silver-box">Silver box</div>
+        <div class="box gold-box" >Gold box</div>
+    </div>
+</body>
+</html>

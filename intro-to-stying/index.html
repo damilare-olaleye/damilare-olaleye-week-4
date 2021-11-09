@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Styling</title>
+
+
+
+<!-- /* Ways of including CSS styling: 
+    1. inline (style attribute)
+    2. internal (<style></style>)
+    3. external (<link />)
+
+*/
+
+/*
+    Order of specificity: 
+
+    1. style attribute
+    2. id selector
+    3. class selector
+    4. tag selector
+*/ -->
+
+<!-- Besides inline style having top priority
+The way conflicts between styles are resolved for internal + external
+is the order in which the styling was defined
+
+The browswer reads the styling top to bottom
+so the styles specified at the bottom take overwrite the styling specified at the top
+(true if they have the same specificity)
+Otherwise, specicifity takes no priority-->
+
+    <!-- style tag allows us to put CSS directly into our HTML tag
+    Internal styling-->
+    <style> 
+        body{
+            background-color: gray;
+        }
+    </style>
+
+    <!--External styling -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Inline styling -->
+    <h1 style="color: blue;">Intro to Styling</h1>
+    <h2 style="color:green">Heading 2</h2>
+
+    <!-- I can have multiple elements with the same class -->
+    <h1 class="red-text" >Intro to Styling</h1>
+    <h2 class="blue-text">Heading 2</h2>
+
+    <!-- the id website-introduction should be unique to this element
+    ONLY ONE element should have the id website-introduction -->
+    
+    <p id="website-introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugit a vitae aperiam eligendi iure incidunt cumque autem perferendis earum ut temporibus veniam iusto impedit, exercitationem minima voluptates sint explicabo voluptatibus provident error asperiores magni. Tempora iste ex rem ad molestias, est tenetur ducimus doloribus voluptate, fuga ipsum consequatur labore optio molestiae quae eos aut perspiciatis eaque vel repudiandae. Dolore nobis dolorem, minus assumenda eveniet nesciunt sit quas veniam, ex odit nemo porro tenetur illo ullam! Repellendus earum eius assumenda? Tempora incidunt iusto possimus iste est perspiciatis? Saepe exercitationem quis aspernatur autem! Nobis quaerat, explicabo nemo amet dignissimos reprehenderit quas.</p>
+   
+    <p>No class and no id paragraph tag</p>
+
+    <script src="./index.js"></script>
+</body>
+</html>

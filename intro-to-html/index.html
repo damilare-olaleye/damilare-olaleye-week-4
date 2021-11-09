@@ -1,0 +1,91 @@
+<!-- We have different components known as "elements"
+    1. Non-self-closing elements (ex. <h1>Hello World </h1>): You need an opening tag and a closing tag
+    2. Self-closing elements (ex. <input type="text" />): You only need a single tag because it is both the opening and closing
+
+-->
+
+<!-- The first line in any HTML file should be the DOCTYPE declaration 
+This tells the browser what version of HTML you are using
+We are using HTML5, which is specified using 'html' as the DOCTYPE
+
+-->
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!-- Paragraph tag -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fuga inventore quidem temporibus alias, modi magni facilis expedita laudantium sed natus odit sint culpa reiciendis. Labore nobis, recusandae pariatur ut quam deleniti ullam necessitatibus quibusdam modi magni porro exercitationem itaque sit asperiores iste sed hic magnam a adipisci enim fugit autem fugiat commodi nostrum? Perspiciatis quasi reprehenderit minus. Assumenda quisquam obcaecati perferendis? Cumque fugit aspernatur, ab cupiditate unde at sit eveniet veniam, autem cum maiores perspiciatis iste deserunt quod doloremque velit provident numquam corrupti inventore sapiente nisi ipsam vero? Libero labore dolor minus, quis enim soluta sapiente et possimus a.</p>
+   
+        <!-- Lists
+        Two types of lists:
+            1. Unordered lists
+            2. Ordered lists
+        -->
+        <h2>Technologies we have learned:</h2>
+        <ul> <!-- Unordered -->
+            <li>Java</li> <!-- List Item -->
+            <li>SQL</li>
+            <li>Javalin</li>
+            <li>Unit testing with JUnit 5 (Jupiter)</li>
+            <li>JDBC</li>
+            <li>Selenium</li>
+        </ul>
+
+        <!-- Ordered -->
+        <h2>Technologies we will learn:</h2>
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Selenium</li>
+            <li>DevOps</li>
+            <li>Angular</li>
+            <li>Spring Framework</li>
+            <li>AWS</li>
+        </ol>
+
+        <!-- Img (Images)-->
+        <img width= "100" height="100" src="https://www.google.com/imgres?imgurl=https%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2020%2F09%2FJava-Logo.png&imgrefurl=https%3A%2F%2F1000logos.net%2Fjava-logo%2F&tbnid=0TV9C2oWrzhoEM&vet=12ahUKEwjK9pG9nIn0AhWb6KwKHS3JDPQQMygAegUIARDDAQ..i&docid=20P0dWoJnqralM&w=4000&h=2500&q=java%20programming%20logo&ved=2ahUKEwjK9pG9nIn0AhWb6KwKHS3JDPQQMygAegUIARDDAQ" alt="" />
+        
+        <!-- a (Anchor tag)-->
+    <!-- This is what you use to link to another html file-->
+    <a href="./contact-us.html">Contact Us</a>
+
+    <!-- We have two types of elements
+        1. block element: spans the entire width of the page
+            - <div></div>: generic block element
+            - <p></p>
+            - <h1></h1>
+            - etc...
+        2. incline elements: do not span the entire width of the page
+            - <span></span>: generic inline element
+            - <img/>
+            - <a></a>
+            - etc...
+    -->
+
+    <!-- Block V. Inline elements -->
+    <!-- You can se the width and height of block eleents, but you cannot with inline elements-->
+    <div style="text-align:center; margin:auto; border-color: blue; width: 100px; height: 100px; border-width: 1px; border-style: solid;">
+        This is a text inside of a div tag 
+    </div>
+    <div style="border-color: blue; border-width: 1px; border-style: solid;">
+        This is a text inside of a div tag 
+    </div>
+    <span style="border-color: green; border-width: 1px; border-style: solid;">
+        This is a text inside of a span tag
+    </span>
+    <span style="border-color: green; border-width: 1px; border-style: solid;">
+        This is a text inside of a span tag
+    </span>
+    </body>
+</html>
