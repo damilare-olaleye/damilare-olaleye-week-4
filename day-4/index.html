@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+
+    <!-- Including bulma css file from the bulma CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <div id="first-div">
+        <span>Testing 1</span>
+        <span>Testing 2</span>
+    </div>
+
+    <img />
+
+    <table class="table is-hoverable is-fullwidth is-striped" id="student-table">
+        <thead>
+            <tr>
+                <th>Student id</th>
+                <th>Student first name</th>
+                <th>Student last name</th>
+                <th>Student classification</th>
+                <th>Student age</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div>
+        <label>id:</label>
+        <input id="student-id-input" type="number" />
+        <label>first name:</label>
+        <input id="first-name-input" type="text" />
+        <label>last name:</label>
+        <input id="last-name-input" type="text" />
+        <label>classification:</label>
+        <select id="classification-dropdown">
+            <option value="Freshman">Freshman</option>
+            <option value="Sophmore">Sophmore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+        </select>
+        <label>age:</label>
+        <input id="age-input" type="number" />
+    </div>
+
+    <button class="button is-primary" id="demo-button">Add Student To Array</button>
+
+    <script src="./index.js"></script>
+</body>
+</html>
